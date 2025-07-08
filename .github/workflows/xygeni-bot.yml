@@ -27,7 +27,7 @@ jobs:
         id: Xygeni-Scanner
         with:
           command: deps --auto-remediate --format none
-          xygeni_url: http://localhost:8086/deps-doctor-service
+          xygeni_url: https://apidev.xygeni.io/deps-doctor-service
           token: ${{ secrets.XYGENI_TOKEN }}
           # run PR from actions should be enabled
           gh_token: ${{ secrets.GITHUB_TOKEN }} 
